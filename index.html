@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Basketball game</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>    
+        <div class="board">
+            <h1 id="timer-display">20:00</h1>
+            <div class="main">
+                <div class="section">
+                    <h2>HOME</h2>
+                    <p class="score" id="home-score">0</p>
+                    <button class="score-btn" onclick="addHomeScore1()">+1</button>
+                    <button class="score-btn" onclick="addHomeScore2()">+2</button>
+                    <button class="score-btn" onclick="addHomeScore3()">+3</button>
+                </div>
+                <div class="section">
+                    <h2 id="title-period">PERIOD</h2>
+                    <button class="secondary-btn" id="period-number" onclick="addPeriod()">1</button>
+                </div>
+                <div class="section">
+                    <h2>GUEST</h2>
+                    <p class="score" id="guest-score">0</p>
+                    <button class="score-btn" onclick="addGuestScore1()">+1</button>
+                    <button class="score-btn" onclick="addGuestScore2()">+2</button>
+                    <button class="score-btn" onclick="addGuestScore3()">+3</button>
+                </div>
+            </div>
+            <div class="section-fouls">
+                <button class="secondary-btn" id="fouls-home" onclick="addFoulsHome()">0</button>
+                <h2>FOULS</h2>
+                <button class="secondary-btn" id="fouls-guest" onclick="addFoulsGuest()">0</button>
+            </div>
+            <button class="newgame-btn" id="start-btn" onclick="newGame()">NEW GAME</button>
+        </div>
+    <script src="index.js"></script>  
+    </body>
+</html>
